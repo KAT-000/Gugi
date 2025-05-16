@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>جوجي - موقعك الاحترافي</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f7fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  header {
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  header h1 {
+    margin: 0;
+    font-weight: 700;
+  }
+  nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  nav a:hover {
+    color: #1abc9c;
+  }
+  .search-box {
+    margin-left: 20px;
+  }
+  .search-box input[type="search"] {
+    padding: 6px 10px;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+  }
+  main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  section {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+    margin-bottom: 30px;
+  }
+  section h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #1abc9c;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  .coming-soon {
+    font-size: 18px;
+    color: #7f8c8d;
+    text-align: center;
+    padding: 40px 0;
+  }
+  footer {
+    text-align: center;
+    color: #999;
+    padding: 20px 10px;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+  }
+  /* صفحة تسجيل الدخول */
+  #login {
+    display: none;
+    max-width: 400px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+  }
+  #login h2 {
+    margin-bottom: 20px;
+  }
+  #login .coming-soon {
+    font-size: 20px;
+    color: #34495e;
+  }
+  /* Responsive */
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .search-box {
+      margin-left: 0;
+      margin-top: 10px;
+      width: 100%;
+    }
+    .search-box input {
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>جوجي</h1>
+  <nav>
+    <a href="#" onclick="showSection('home')">الرئيسية</a>
+    <a href="#" onclick="showSection('articles')">مقالات</a>
+    <a href="#" onclick="showSection('videos')">فيديوهات</a>
+    <a href="#" onclick="showSection('login')">تسجيل دخول</a>
+  </nav>
+  <div class="search-box">
+    <input type="search" placeholder="ابحث هنا..." />
+  </div>
+</header>
+
+<main>
+  <section id="home-section">
+    <h2>أهلاً بك في موقع جوجي</h2>
+    <p class="coming-soon">الموقع تحت التطوير، قريباً المزيد من المحتوى!</p>
+  </section>
+
+  <section id="articles-section" style="display:none;">
+    <h2>المقالات</h2>
+    <p class="coming-soon">المقالات قيد الإعداد، انتظرونا قريباً.</p>
+  </section>
+
+  <section id="videos-section" style="display:none;">
+    <h2>الفيديوهات</h2>
+    <p class="coming-soon">الفيديوهات قريباً، ترقبوا المزيد.</p>
+  </section>
+
+  <section id="login" >
+    <h2>تسجيل الدخول</h2>
+    <p class="coming-soon">خاصية تسجيل الدخول قيد التطوير.</p>
+  </section>
+</main>
+
+<footer>
+  جميع الحقوق محفوظة © 2025 جوجي
+</footer>
+
+<script>
+  function showSection(section) {
+    document.getElementById('home-section').style.display = 'none';
+    document.getElementById('articles-section').style.display = 'none';
+    document.getElementById('videos-section').style.display = 'none';
+    document.getElementById('login').style.display = 'none';
+
+    if(section === 'home') {
+      document.getElementById('home-section').style.display = 'block';
+    } else if(section === 'articles') {
+      document.getElementById('articles-section').style.display = 'block';
+    } else if(section === 'videos') {
+      document.getElementById('videos-section').style.display = 'block';
+    } else if(section === 'login') {
+      document.getElementById('login').style.display = 'block';
+    }
+  }
+</script>
+
+</body>
+</html>
