@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>عالم بليتش</title>
+  <style>
+    body {
+      background: #0a0a0a;
+      color: #00ffff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 30px;
+      font-size: 2.5rem;
+      text-shadow: 0 0 8px #00ffff;
+    }
+    .anime-list {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .anime-card {
+      position: relative;
+      width: 250px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 15px #00ffffaa;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      background: #111;
+    }
+    .anime-card:hover {
+      transform: scale(1.05);
+    }
+    .anime-card img {
+      width: 100%;
+      display: block;
+    }
+    .overlay-text {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background: rgba(0, 255, 255, 0.8);
+      color: #000;
+      font-weight: bold;
+      padding: 10px;
+      font-size: 16px;
+      border-top-left-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+  <h1>بليتش أفضل أنمي في التاريخ</h1>
+  <div class="anime-list">
+    <div class="anime-card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Bleach_cover.svg/1200px-Bleach_cover.svg.png" alt="بليتش 1" />
+      <div class="overlay-text">بليتش أفضل أنمي في التاريخ</div>
+    </div>
+    <div class="anime-card">
+      <img src="https://wallpapercave.com/wp/wp3198693.jpg" alt="بليتش 2" />
+      <div class="overlay-text">بليتش أفضل أنمي في التاريخ</div>
+    </div>
+    <div class="anime-card">
+      <img src="https://wallpaperaccess.com/full/1902216.jpg" alt="بليتش 3" />
+      <div class="overlay-text">بليتش أفضل أنمي في التاريخ</div>
+    </div>
+  </div>
+</body>
+</html>
