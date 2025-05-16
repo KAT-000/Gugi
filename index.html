@@ -1,11 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar" dir="rtl">
 <head>
-    <title>موقعي الأول</title>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>موقع فخم وأنيق</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(135deg, #2c3e50, #4ca1af);
+      color: #f0f0f0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2rem;
+      font-weight: 300;
+      margin-top: 10px;
+      opacity: 0.8;
+    }
+    .btn {
+      background: #e67e22;
+      border: none;
+      padding: 15px 35px;
+      color: white;
+      font-size: 1.2rem;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 8px 15px rgba(230, 126, 34, 0.4);
+      transition: all 0.3s ease;
+      margin-top: 20px;
+    }
+    .btn:hover {
+      background: #d35400;
+      box-shadow: 0 15px 20px rgba(211, 84, 0, 0.6);
+      transform: translateY(-3px);
+    }
+    footer {
+      margin-top: auto;
+      padding: 15px;
+      font-size: 0.9rem;
+      opacity: 0.6;
+    }
+  </style>
 </head>
 <body>
-    <h1>أهلًا بك في موقعي!</h1>
-    <p>هذا موقع بسيط نبدأ فيه، بعدين نضيف له مميزات وذكاء اصطناعي.</p>
+  <header>
+    <h1>مرحبا بك في موقعي الفخم</h1>
+    <p>تجربة تصميم بسيطة وأنيقة تبدأ من هنا</p>
+  </header>
+  
+  <button class="btn" onclick="alert('الزر شغال!')">جرب الزرار</button>
+
+  <footer>حقوق النشر © 2025 كل الحقوق محفوظة</footer>
 </body>
 </html>
